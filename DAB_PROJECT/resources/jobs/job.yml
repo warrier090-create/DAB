@@ -1,0 +1,15 @@
+resources:
+  jobs:
+    injestion_job_Oct_03_2025_08_36_PM:
+      name: injestion_job Oct 03, 2025, 08:36 PM
+      tasks:
+        - task_key: injestion_job
+          notebook_task:
+            notebook_path: ../../src/Notebooks/Injestion.ipynb
+              2025-10-03 20_20_23
+            base_parameters:
+              catalog_name: ${var.catalog_name}
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
